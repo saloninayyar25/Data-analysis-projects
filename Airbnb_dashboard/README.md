@@ -2,7 +2,7 @@
 
 Interactive Power BI dashboard analyzing **2,79,712 Airbnb listings**, **1,82,024 hosts**, and **5.37M reviews** across 10 global cities (2008–2020), covering market share, pricing, host trust, and review behavior.
 
-![Overview](dashboard_screenshots/01-Overview.png)
+![Overview](Airbnb_dashboard/Dashboard/01-Overview.png)
 
 ## 📌 Project Overview
 
@@ -22,7 +22,7 @@ Built using the public **[Airbnb Listings & Reviews dataset](https://mavenanalyt
 
 **Relationship:** `Listings[listing_id]` (1) → `Reviews[listing_id]` (*)
 
-![Data Model](dashboard_screenshots/data-model.png)
+![Data Model](Airbnb_dashboard/Dashboard/02-Ratings.png)
 
 ## 🧮 DAX Measures & Calculated Columns
 
@@ -119,13 +119,13 @@ DIVIDE(
 KPI cards (listings, cities, hosts, property types, reviews) plus a new-listings lifecycle line chart, 2008–2020, annotated across Introduction → Growth → Maturity → Decline → Reinvention → COVID-19 phases.
 
 ### 2. Ratings
-![Ratings page](dashboard_screenshots/02-Ratings.png)
+![Ratings page](Airbnb_dashboard/Dashboard/02-Ratings.png)
 - **Market Share by City** — combo chart: `city` (X-axis), `Superhost Listings` / `No Superhost Listings` (stacked columns), `Cumulative %` (line) — the Pareto pattern above
 - **Average Price by Room Type** — bar chart: `Room Type` (Y-axis) vs `Average Price` (X-axis)
 - **Ratings table** — matrix: `City` (rows) × `Accuracy`, `Cleanliness`, `Communication`, `Location`, `Value` (values), conditional formatting
 
 ### 3. Reviews
-![Reviews page](dashboard_screenshots/03-Reviews.png)
+![Reviews page](Airbnb_dashboard/Dashboard/03-Reviews.png)
 - **Review Frequency** — combo chart: `Reviews per Reviewer` (X-axis), `Reviewers` (column Y-axis), `% review frequency` (line Y-axis) — same Pareto pattern, filtered by `Show in Review Frequency Chart`
 - **Seasonality** — streamgraph: `Review Month` (X-axis), `% of Monthly Reviews` (Y-axis), `City` (legend)
 - **Trust shield** — host verification breakdown using the `Verified_*` / `NotVerified_*` measures
@@ -167,7 +167,7 @@ The `.pbix` file and raw source CSVs aren't in this repo (Power BI's cache pushe
 
 ## 📥 Full Files (.pbix + raw data)
 
-- **Full project files (.pbix + raw CSVs):** [Google Drive folder](https://drive.google.com/drive/folders/196FdT2RhkCra9vi3ZG6638kkp_zNVGUA?usp=drive_link)
+- **Full project files (.pbix + raw CSVs):** [Google Drive folder](https://drive.google.com/drive/folders/1zls1eI_333jU_6ICk_V-Zdvwg4Qpbxn0?usp=sharing)
 - **Raw dataset source:** [Maven Analytics Data Playground](https://mavenanalytics.io/data-playground)
 
 ## 🙏 Credits
