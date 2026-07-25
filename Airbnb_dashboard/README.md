@@ -22,7 +22,7 @@ Built using the public **[Airbnb Listings & Reviews dataset](https://mavenanalyt
 
 **Relationship:** `Listings[listing_id]` (1) → `Reviews[listing_id]` (*)
 
-![Data Model](Dashboard/02-Ratings.png)
+![Data Model](Dashboard/Data_model.png)
 
 ## 🧮 DAX Measures & Calculated Columns
 
