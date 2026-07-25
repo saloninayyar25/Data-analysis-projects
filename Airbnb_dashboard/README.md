@@ -2,7 +2,7 @@
 
 Interactive Power BI dashboard analyzing **2,79,712 Airbnb listings**, **1,82,024 hosts**, and **5.37M reviews** across 10 global cities (2008–2020), covering market share, pricing, host trust, and review behavior.
 
-![Overview](Airbnb_dashboard/Dashboard/01-Overview.png)
+![Overview](Dashboard/01-Overview.png)
 
 ## 📌 Project Overview
 
@@ -22,7 +22,7 @@ Built using the public **[Airbnb Listings & Reviews dataset](https://mavenanalyt
 
 **Relationship:** `Listings[listing_id]` (1) → `Reviews[listing_id]` (*)
 
-![Data Model](Airbnb_dashboard/Dashboard/02-Ratings.png)
+![Data Model](Dashboard/02-Ratings.png)
 
 ## 🧮 DAX Measures & Calculated Columns
 
@@ -119,13 +119,13 @@ DIVIDE(
 KPI cards (listings, cities, hosts, property types, reviews) plus a new-listings lifecycle line chart, 2008–2020, annotated across Introduction → Growth → Maturity → Decline → Reinvention → COVID-19 phases.
 
 ### 2. Ratings
-![Ratings page](Airbnb_dashboard/Dashboard/02-Ratings.png)
+![Ratings page](Dashboard/02-Ratings.png)
 - **Market Share by City** — combo chart: `city` (X-axis), `Superhost Listings` / `No Superhost Listings` (stacked columns), `Cumulative %` (line) — the Pareto pattern above
 - **Average Price by Room Type** — bar chart: `Room Type` (Y-axis) vs `Average Price` (X-axis)
 - **Ratings table** — matrix: `City` (rows) × `Accuracy`, `Cleanliness`, `Communication`, `Location`, `Value` (values), conditional formatting
 
 ### 3. Reviews
-![Reviews page](Airbnb_dashboard/Dashboard/03-Reviews.png)
+![Reviews page](Dashboard/03-Reviews.png)
 - **Review Frequency** — combo chart: `Reviews per Reviewer` (X-axis), `Reviewers` (column Y-axis), `% review frequency` (line Y-axis) — same Pareto pattern, filtered by `Show in Review Frequency Chart`
 - **Seasonality** — streamgraph: `Review Month` (X-axis), `% of Monthly Reviews` (Y-axis), `City` (legend)
 - **Trust shield** — host verification breakdown using the `Verified_*` / `NotVerified_*` measures
